@@ -2,7 +2,7 @@
 
 function emailATestPDFFile(){
   // Test out the Email Script
-  sendEmail('elliot@ecoplumbers.com', 'Test','This is a test','KPI REPORT - MTD - 2019-10-1');
+  sendEmail('email@test.com', 'Test','This is a test','KPI REPORT - MTD - 2019-10-1');
 };
 
 function sendEmail(to, subject, htmlBody, pdfFileName){
@@ -33,7 +33,7 @@ function getPDF(fileName){
 function testMultiPDFs(){
   var fileQuery = 'title contains "KPI" and title contains "2019-10-03.pdf"'
   
-  sendEmailMultiAttach('elliot@ecoplumbers.com', 'Test','This is a test',fileQuery)
+  sendEmailMultiAttach('email@test.com', 'Test','This is a test',fileQuery)
   
 };
 

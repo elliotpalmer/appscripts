@@ -20,7 +20,7 @@
 function test(){
   var deptSheets = ["Service","Maintenance","Drain","Sales","Install","Excavation"];
   for(sheet of deptSheets){
-    createPDFReport(sheet,'MTD', '1Fc1aVyTnbwqWVoQqVrwXqkjcP89BF9e-', 'MTD' + ' - KPI Report - ' + sheet + ' - ')
+    createPDFReport(sheet,'MTD', '1Fc1aVyTnbwqWVoQ3V3wXqkjcP89BF9e-', 'MTD' + ' - KPI Report - ' + sheet + ' - ')
   }
 }
 
@@ -78,7 +78,7 @@ function test(){
   var newFile = FOLDER.createFile(blob);
 
   //from here you should be able to use and manipulate the blob to send and email or create a file per usual.
-   var email = 'ecocommunications@ecoplumbers.com'; 
+   var email = 'email@test.com'; 
    var subject = "Client Concern Report " + period ;
    var body = "Please see the attached Client Concern report for last week.";
   //Place receipient email between the marks
